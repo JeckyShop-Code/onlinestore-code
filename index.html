@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bienvenidos a JeckyShop, tu tienda en línea confiable para encontrar una variedad increíble de productos a precios inigualables. Nos especializamos en ofrecer productos de alta calidad mediante el modelo de negocio de dropshipping, lo que nos permite brindar una amplia selección de artículos directamente desde nuestros proveedores a tu puerta.">
+    <!-- Enlace al icono de la pagina -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>JeckyShop | VARIEDAD PARA TU VIDA, AL ALCANCE DE UN CLIC</title>
+
+    <!-- Enlace a los estilos de la pagina principal -->
+    <link rel="stylesheet" href="css/main.css" >
+
+    <!-- Enlace a los eztilos de la ventana de bienvenida -->
+    <link rel="stylesheet" href="css/components/welcome.css">
+
+    <!-- Enlace a los estilos del header  -->
+    <link rel="stylesheet" href="css/components/header.css">
+
+    <!-- Estilos de la presentacion de categorias -->
+    <link rel="stylesheet" href="css/components/categories-presentation.css">
+
+    <!-- Estilos de la presentacion de productos -->
+    <link rel="stylesheet" href="css/components/products-presentation.css">
+
+    <!-- Enlace de libreria de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="welcome" id="welcome-message">
+        <div class="background-image">
+            <img src="images/backgrounds/welcome-background.webp" alt="background image">
+            <span class="fill-background"></span>
+        </div>
+        <div class="content">
+            <div class="logos">
+                <img src="images/img-logo-white.webp" alt="Logo JeckyShop">
+                <img src="images/img-logo-text-white.webp" alt="Logo text JeckyShop">
+            </div>
+            <p class="slogan">¡VARIEDAD PARA TU VIDA, AL ALCANCE DE UN CLIC!</p>
+        </div>
+    </div>
+
+    <header class="header-page">
+        <div class="header-logos">
+            <a href="templates/more-information/more-information.html" class="links-header" target="_blank">
+                <img src="images/img-logo-white.webp" alt="JeckyShop">
+                <img src="images/img-logo-text-white.webp" alt="JeckyShop">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-link">
+                    <a href="templates/more-information/more-information.html" target="_blank"><i
+                            class="fa-solid fa-circle-info"></i>Más información</a>
+                </li>
+                <li class="nav-link">
+                    <a href="templates/more-information/more-information.html#contact" target="_blank"><i
+                            class="fa-solid fa-comments"></i>Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-home">
+            <div class="categories-presentation">
+                <div class="category">
+                    <div class="category-background">
+                        <img src="images/backgrounds/category-technology.webp"
+                            alt="category technology background image">
+                        <span class="fill-category"></span>
+                    </div>
+                    <p class="text-category">TECNOLOGÍA</p>
+                </div>
+                <div class="category animate-appear" style="--i: 1;">
+                    <div class="category-background">
+                        <img src="images/backgrounds/category-home.webp" alt="category home background image">
+                        <span class="fill-category"></span>
+                    </div>
+                    <p class="text-category">HOGAR</p>
+                </div>
+                <div class="category animate-appear" style="--i: 2;">
+                    <div class="category-background">
+                        <img src="images/backgrounds/category-beauty.webp" alt="category beauty background image">
+                        <span class="fill-category"></span>
+                    </div>
+                    <p class="text-category">BELLEZA</p>
+                </div>
+                <div class="category animate-appear" style="--i: 3;">
+                    <div class="category-background">
+                        <img src="images/backgrounds/category-fashion.webp" alt="category fashion background image">
+                        <span class="fill-category"></span>
+                    </div>
+                    <p class="text-category">MODA</p>
+                </div>
+                <div class="category animate-appear" style="--i : 4;">
+                    <div class="category-background">
+                        <img src="images/backgrounds/category-tools.webp" alt="category tools background image">
+                        <span class="fill-category"></span>
+                    </div>
+                    <p class="text-category">HERRAMIENTAS</p>
+                </div>
+                <div class="category animate-appear" style="--i: 5;">
+                    <div class="category-background">
+                        <img src="images/backgrounds/search-product.webp" alt="category technology background image">
+                        <span class="fill-category"></span>
+                    </div>
+                    <p class="text-category text-search">ENCUENTRA LO QUE NECESITAS</p>
+                </div>
+
+                <!-- input buscar producto -->
+                <div class="input-search">
+                    <input type="text" id="home-search-input" placeholder="Ingresa el nombre del producto">
+                    <button class="btn-search" id="btn-home-search" aria-label="buscar"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="slogan">
+            <h1 class="sl-title">¡VARIEDAD PARA TU VIDA, AL ALCANCE DE UN CLIC!</h1>
+            <h2 class="sl-icon-animation"><i class="fa-solid fa-angles-down"></i></h2>
+        </section>
+        <section class="products-presentation">
+            <div class="slider-container accessories-category">
+                <h3 class="ac-title c-title-link"><a
+                        href="/templates/catalog/catalog.html?category=Accesorios">Accesorios <i
+                            class="fa-solid fa-angles-right"></i></a></h3>
+                <div class="products-slider" id="ac-slider"></div>
+            </div>
+            <div class="slider-container technology-category">
+                <h3 class="tc-title c-title-link"><a
+                        href="/templates/catalog/catalog.html?category=Tecnologia">Tecnología <i
+                            class="fa-solid fa-angles-right"></i></a></h3>
+                <div class="products-slider" id="tc-slider"></div>
+            </div>
+            <div class="slider-container beauty-category">
+                <h3 class="bc-title c-title-link"><a href="/templates/catalog/catalog.html?category=Belleza">Belleza <i
+                            class="fa-solid fa-angles-right"></i></a></h3>
+                <div class="products-slider" id="bc-slider"></div>
+            </div>
+            <div class="slider-container home-category">
+                <h3 class="hc-title c-title-link"><a href="/templates/catalog/catalog.html?category=Hogar">Hogar<i
+                            class="fa-solid fa-angles-right"></i></a></h3>
+                <div class="products-slider" id="hc-slider"></div>
+            </div>
+            <div class="slider-container tools-category">
+                <h3 class="tlc-title c-title-link"><a
+                        href="/templates/catalog/catalog.html?category=Herramientas">Herramientas<i
+                            class="fa-solid fa-angles-right"></i></a></h3>
+                <div class="products-slider" id="tlc-slider"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 JeckyShop | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

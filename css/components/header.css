@@ -1,0 +1,59 @@
+@import url("../colors.css");
+
+.header-page {
+    position: relative;
+    padding: 10px;
+    background-color: var(--principal-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.links-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+}
+
+.links-header img:nth-child(1) {
+    height: 100%;
+}
+
+.links-header img:nth-child(2) {
+    height: 50%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-link a {
+    color: var(--text-white);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link a:hover {
+    border-bottom: 1px solid var(--text-white);
+}
+
+@media (max-width: 650px) {
+    .header-page {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+

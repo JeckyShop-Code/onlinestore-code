@@ -1,0 +1,115 @@
+@import url("../colors.css");
+
+.categories-presentation {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.category {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+.animate-appear {
+    opacity: 0;
+    animation: animation-appear 1.5s ease-in forwards;
+    animation-delay: calc(2.5s * var(--i)); 
+}
+
+.category-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.category-background img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: end;
+}
+
+.fill-category {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--principal-blue);
+    opacity: .4;
+}
+
+.text-category {
+    font-size: 3em;
+    color: var(--text-white);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.text-search {
+    font-size: 2em;
+}
+
+.input-search {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: var(--white);
+    z-index: 100;
+    border-radius: 5px;
+    border: 2px solid var(--principal-blue);
+}
+
+.input-search input {
+    height: 100%;
+    width: 80%;
+    padding: 0 20px;
+    background-color: var(--white);
+    color: var(--principal-blue);
+    border: none;
+    caret-color: var(--principal-blue);
+}
+
+.input-search input:focus {
+    outline: none;
+    border: none;
+}
+
+.input-search button {
+    height: 100%;
+    width: 20%;
+    padding: 5px 0;
+    border: none;
+    background-color: var(--principal-blue);
+    color: var(--white);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@keyframes animation-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .input-search {
+        width: 70%;
+    }
+}

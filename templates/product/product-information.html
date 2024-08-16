@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/product-info-styles.css">
+
+    <link rel="icon" href="/icons/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title></title>
+</head>
+<body>
+    <header class="header-page" id="header">
+        <div class="header-logos">
+            <a href="/index.html" class="links-header">
+                <img src="/images/img-logo-white.webp" alt="JeckyShop">
+                <img src="/images/img-logo-text-white.webp" alt="JeckyShop">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-link">
+                    <a href="/templates/more-information/more-information.html" target="_blank"><i class="fa-solid fa-circle-info"></i>Más información</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/templates/more-information/more-information.html#contact" target="_blank"><i class="fa-solid fa-comments"></i>Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="product-info">
+            <div class="pi-images">
+                <div class="pi-images-slider">
+                    <div class="pi-imgs-container">
+                        <img id="pr-image-view" src="" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="pi-select-img" id="product-images">
+                    
+                </div>
+            </div>
+            <div class="pi-details" id="product-details"> 
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 JeckyShop | Todos los derechos reservados.</p>
+    </footer>
+    <a href="#pr-image-view" class="btn-start"><i class="fa-regular fa-circle-up"></i></a>
+    <script type="module" src="js/product-info.js"></script>
+
+    <script>
+        const image = document.getElementById('pr-image-view');
+
+        function selectImage(selected) {
+            let imageSelected = selected.src;
+
+            image.src = imageSelected;
+        }
+    </script>
+</body>
+</html>

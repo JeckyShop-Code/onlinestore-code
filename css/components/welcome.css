@@ -1,0 +1,88 @@
+@import url("../colors.css");
+
+.welcome {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    animation: disappear 3s ease-in forwards;
+    animation-delay: 4;
+    z-index: 30;
+}
+
+.background-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.background-image img {
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    object-position: right;
+    width: 100%;
+    height: 100%;
+}
+
+.fill-background {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--principal-blue);
+    opacity: .6;
+}
+
+.content {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 5%;
+    z-index: 100;
+}
+
+.content .slogan {
+    font-size: 2em;
+    color: var(--text-white);
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.logos img:nth-child(1) {
+    margin: auto;
+    width: 40%;
+}
+
+.logos img:nth-child(2) {
+    margin: auto;
+    width: 90%;
+}
+
+.slogan {
+    text-align: center;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

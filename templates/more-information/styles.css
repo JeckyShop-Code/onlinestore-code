@@ -1,0 +1,160 @@
+@import url("/css/colors.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppind', sans-serif;
+}
+
+body {
+    min-width: 450px;
+    max-width: 2000px;
+    background-color: #eee;
+}
+
+.header-page {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    z-index: -2;
+}
+
+.background-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fill-header {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--principal-blue);
+    opacity: .7;
+    z-index: 1;
+}
+
+.title-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    gap: 20px;
+}
+
+.logos img:nth-child(1) {
+    height: 80px;
+}
+
+.logos img:nth-child(2) {
+    height: 40px;
+}
+
+.header-text {
+    color: var(--text-white);
+    border-left: 5px solid var(--text-white);
+    padding-left: 10px;
+}
+
+.information {
+    padding: 50px 20%;
+    color: var(--text-gray);
+    /* text-align: center; */
+}
+
+article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--principal-blue);
+}
+article h2 {
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 1.2em;
+}
+
+.suppliers-advantages {
+    padding-left: 50px;
+}
+
+.icons-shipping {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.icons-shipping li img {
+    width: 70px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-links a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: var(--principal-blue);
+}
+
+.footer {
+    padding: 10px;
+    background-color: var(--principal-blue);
+    font-size: .8em;
+    text-align: center;
+    color: var(--text-white);
+}
+
+@media (max-width: 700px) {
+    .title-header {
+        flex-direction: column;
+        height: max-content;
+        margin-top: 30px;
+    }
+    .logos {
+        flex-direction: column;
+    }
+    .header-text {
+        border: none;
+        border-top: 5px solid var(--text-white);
+        padding: 5px;
+    }
+    .information {
+        padding: 50px 5%;
+    }
+}
