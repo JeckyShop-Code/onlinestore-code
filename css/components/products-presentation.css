@@ -3,6 +3,7 @@
 .slogan {
     padding-top: 5%;
     color: var(--text-gray);
+    text-align: center;
 }
 
 .sl-title {

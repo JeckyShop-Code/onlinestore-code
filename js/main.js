@@ -1,12 +1,6 @@
 import { renderedCard } from "./components/generateProductCard.js";
 import { searchByCategory } from "./components/productsSearchAlgoritm.js";
 
-const welcomeAnimation = document.getElementById("welcome-message");
-
-setTimeout(() => {
-    welcomeAnimation.remove();
-}, 3500);
-
 const dataUrl = '../data/products.json';
 
 function viewProductsCategory(category = '', slider) {

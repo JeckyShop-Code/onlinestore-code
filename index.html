@@ -11,6 +11,7 @@
     <title>JeckyShop | VARIEDAD PARA TU VIDA, AL ALCANCE DE UN CLIC</title>
 
     <script src="js/main.js" type="module" defer></script>
+
     <!-- Enlace a los estilos de la pagina principal -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -32,8 +33,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <div class="welcome" id="welcome-message">
+<body class="hidden">
+    <div class="welcome" id="onload">
         <div class="background-image">
             <img src="images/backgrounds/welcome-background.webp" alt="background image">
             <span class="fill-background"></span>
@@ -43,7 +44,8 @@
                 <img src="images/img-logo-white.webp" alt="Logo JeckyShop">
                 <img src="images/img-logo-text-white.webp" alt="Logo text JeckyShop">
             </div>
-            <p class="slogan">¡VARIEDAD PARA TU VIDA, AL ALCANCE DE UN CLIC!</p>
+            <p class="w-slogan">¡VARIEDAD PARA TU VIDA, AL ALCANCE DE UN CLIC!</p>
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div>
     </div>
 
@@ -161,5 +163,6 @@
         <p>&copy; 2024 JeckyShop | Todos los derechos reservados.</p>
     </footer>
 
+    <script src="js/indexLoad.js"></script>
 </body>
 </html>
