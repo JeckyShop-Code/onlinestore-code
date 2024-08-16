@@ -6,7 +6,7 @@ const dataUrl = '../data/products.json';
 function viewProductsCategory(category = '', slider) {
     fetch(dataUrl)
         .then(response => response.json())
-        .then(data => renderedCard(slider, searchByCategory(category, data, 6)))
+        .then(data => renderedCard(slider, searchByCategory(category, data, 5)))
 }
 
 const accessoriesCategorySlider = document.getElementById("ac-slider");
