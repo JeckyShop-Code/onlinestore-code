@@ -3,6 +3,7 @@ import { formatPrice } from "/js/components/generateProductCard.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('productId');
+
 const dataUrl = '/data/products.json';
 
 const whatsAppNumber = 573127240055;
